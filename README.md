@@ -5,7 +5,7 @@
 
 
 ## Overview
-This project focuses on programmatic remediation of security vulnerabilities in a Windows 10 Pro virtual machine (VM). By leveraging tools like Microsoft Azure and Tenable Enterprise, we provisioned a VM, performed authenticated vulnerability scans using the DISA STIG template, and automated the remediation process using PowerShell scripts. This project simulates the actions a cybersecurity analyst would take to resolve vulnerabilities at scale, helping streamline remediation in enterprise environments.
+This project focuses on programmatic remediation of security vulnerabilities in a Windows 10 virtual machine (VM). By leveraging tools like Microsoft Azure and Tenable, we provisioned a VM, performed authenticated vulnerability scans using the DISA STIG template, and automated the remediation process using PowerShell scripts. This project simulates the actions a cybersecurity analyst would take to resolve vulnerabilities in a enterprise environment.
 
 ## Tools & Technologies
 - **Microsoft Azure** (Virtual Machine)
