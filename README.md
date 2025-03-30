@@ -39,7 +39,7 @@ To simulate common vulnerabilities, we manually introduced several issues:
    - [PowerShell Script for Protocols](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-protocols.ps1)
 ----
 ### Step 4: Run Authenticated Scan
-Run **Authenticated Scan** on the **Azure VM** using Tenable Enterprise to capture the state of the vulnerabilities. This provides a baseline before remediation.
+Run a **Authenticated Scan** on the **Azure VM** using Tenable to capture the state of the vulnerabilities. This provides a baseline before remediation.
 
 ![First scan Screenshot 2025-03-28 015853](https://github.com/user-attachments/assets/6ba618a8-d7bb-4880-b921-82d3104dae73)
 -----
