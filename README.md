@@ -6,7 +6,7 @@
 This project focuses on programmatic remediation of security vulnerabilities in a Windows 10 virtual machine (VM). By leveraging tools like Microsoft Azure and Tenable, we provisioned a VM, performed authenticated vulnerability scans using the DISA STIG template, and automated the remediation process using PowerShell scripts. This project simulates the actions a cybersecurity analyst would take to resolve vulnerabilities in an enterprise environment.
 
 ## Tools & Technologies
-- **Microsoft Azure** (Virtual Machine)
+- **Microsoft Azure** (Virtual Machine Provisioning)
 - **Tenable Vulnerability Management Platform** (Authenticated Scans)
 - **PowerShell** (Automated Remediation Scripts)
 
@@ -31,7 +31,7 @@ This project focuses on programmatic remediation of security vulnerabilities in 
 ![Screenshot 2025-03-28 005022](https://github.com/user-attachments/assets/ff5880f7-944a-4142-82c3-5d51626098c8)
 ----
 ### Step 3: Manually Introduce Vulnerabilities
-To simulate common vulnerabilities, we manually introduced several issues:
+To simulate common vulnerabilities, we manually introduced the following vulnerabilities:
 1. **Old Version of Firefox** (Insecure Software)
    - [Vulnerability Link](https://drive.google.com/drive/u/6/folders/1y1pSHgkpWpgDTDkYmV4bZDZtiPP6i-GA)
 2. **Enable SMBv1:** EternalBlue exploits a vulnerability in the SMBv1 protocol, which is used for file sharing and network communication in Windows. By sending specially crafted packets to a vulnerable system, it allows an attacker to execute arbitrary code remotely, enabling them to take control of the system without requiring user interaction.
@@ -56,7 +56,7 @@ To simulate real-world remediation in large environments, I wrote PowerShell scr
    
 3. **Disable Insecure Cryptographic Protocols**:
    - [PowerShell Script - Disable Protocols](https://github.com/cybererik/Programmatic-Remediation-in-Windows/blob/main/toggle-protocols.ps1)
-
+-------
 ## Testing & Verification
 After running the scan post-remediation, compare the results with the previous scan to evaluate the effectiveness of the automated remediation. Successful remediation should show a reduction in the number of critical vulnerabilities, and the system should now meet security compliance standards.
 
