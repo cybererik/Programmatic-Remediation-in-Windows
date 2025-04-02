@@ -49,13 +49,13 @@ Run a **Authenticated Scan** on the **Azure VM** using Tenable to capture the st
 To simulate real-world remediation in large environments, I wrote PowerShell scripts to automate vulnerability remediation. The goal is to remove bad configurations automatically, without manual intervention, while testing the scripts in a sandbox environment first.
 
 1. **Uninstall Old Version of Firefox**: 
-   - [PowerShell Script - Firefox Uninstall](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/remediation-FireFox-uninstall.ps1)
+   - [PowerShell Script - Firefox Uninstall](https://github.com/cybererik/Programmatic-Remediation-in-Windows/blob/main/remediation-FireFox-uninstall.ps1)
    
 2. **Disable SMBv1**: 
-   - [PowerShell Script - SMBv1 Disable](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/remediation-SMBv1.ps1)
+   - [PowerShell Script - SMBv1 Disable](https://github.com/cybererik/Programmatic-Remediation-in-Windows/blob/main/remediation-SMBv1.ps1)
    
 3. **Disable Insecure Cryptographic Protocols**:
-   - [PowerShell Script - Disable Protocols](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-protocols.ps1)
+   - [PowerShell Script - Disable Protocols](https://github.com/cybererik/Programmatic-Remediation-in-Windows/blob/main/toggle-protocols.ps1)
 
 ## Testing & Verification
 After running the scan post-remediation, compare the results with the previous scan to evaluate the effectiveness of the automated remediation. Successful remediation should show a reduction in the number of critical vulnerabilities, and the system should now meet security compliance standards.
