@@ -21,7 +21,7 @@ This project focuses on programmatic remediation of security vulnerabilities in 
 
 ### Step 1: Provision a Windows 10 Pro VM
 1. Create a new Virtual Machine (VM) on **Microsoft Azure** with Windows 10 Pro as the OS.
----
+------
 ### Step 2: Create an Authenticated Scan in Tenable
 1. Create an **Authenticated Scan** using the **Windows 10 DISA STIG** template to scan the VM for vulnerabilities.
 
@@ -29,7 +29,8 @@ This project focuses on programmatic remediation of security vulnerabilities in 
 **DISA STIG (Defense Information Systems Agency Security Technical Implementation Guide)** provides configuration guidelines to harden IT systems and enforce cybersecurity compliance, mainly for the Department of Defense (DoD).
 
 ![Screenshot 2025-03-28 005022](https://github.com/user-attachments/assets/ff5880f7-944a-4142-82c3-5d51626098c8)
-----
+
+------
 ### Step 3: Manually Introduce Vulnerabilities
 To simulate common vulnerabilities, we manually introduced the following vulnerabilities:
 1. **Old Version of Firefox** (Insecure Software)
@@ -42,11 +43,12 @@ To simulate common vulnerabilities, we manually introduced the following vulnera
 Run a **Authenticated Scan** on the **Azure VM** using Tenable to capture the state of the vulnerabilities. This provides a baseline before remediation.
 
 ![First scan Screenshot 2025-03-28 015853](https://github.com/user-attachments/assets/6ba618a8-d7bb-4880-b921-82d3104dae73)
------
+
+-------
 ## Remediation Step
 
 ### Step 5: Created PowerShell Scripts for Programmatic Remediation
-To simulate real-world remediation in large environments, I wrote PowerShell scripts to automate vulnerability remediation. The goal is to remove bad configurations automatically, without manual intervention, while testing the scripts in a sandbox environment first.
+To simulate real-world remediation in large environments, I created PowerShell scripts to automate vulnerability remediation. The goal is to remove bad configurations automatically, without manual intervention, while testing the scripts in a sandbox environment first.
 
 1. **Uninstall Old Version of Firefox**: 
    - [PowerShell Script - Firefox Uninstall](https://github.com/cybererik/Programmatic-Remediation-in-Windows/blob/main/remediation-FireFox-uninstall.ps1)
