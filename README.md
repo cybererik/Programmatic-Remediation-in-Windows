@@ -36,7 +36,7 @@ To simulate common vulnerabilities, we manually introduced several issues:
    - [Vulnerability Link](https://drive.google.com/drive/u/6/folders/1y1pSHgkpWpgDTDkYmV4bZDZtiPP6i-GA)
 2. **Enable SMBv1:** EternalBlue exploits a vulnerability in the SMBv1 protocol, which is used for file sharing and network communication in Windows. By sending specially crafted packets to a vulnerable system, it allows an attacker to execute arbitrary code remotely, enabling them to take control of the system without requiring user interaction.
 3. **Enable Discouraged Cryptographic Protocols** (SSL 2.0, SSL 3.0, TLS 1.0, TLS 1.1)
-   - [PowerShell Script for Protocols](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-protocols.ps1)
+   - [PowerShell Script for Protocols](https://github.com/cybererik/Programmatic-Remediation-in-Windows/blob/main/Enable%20bad%20protocols.ps1)
 ----
 ### Step 4: Run Authenticated Scan
 Run a **Authenticated Scan** on the **Azure VM** using Tenable to capture the state of the vulnerabilities. This provides a baseline before remediation.
